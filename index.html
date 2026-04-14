@@ -4,271 +4,15 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Sapna Nirmal | Full Stack Developer</title>
+<link rel="stylesheet" href="./style.css">
 
-<style>
-
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
-
-body{
-line-height:1.6;
-background:linear-gradient(,#f4f5f7,#fefeff);
-color:#363636
-}
-
-.container{width:90%;max-width:1100px;margin:auto}
-
-/* HEADER */
-
-header{
-background:#111;
-color:white;
-padding:18px 0
-}
-
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center
-}
-
-.logo{
-font-size:22px;
-font-weight:bold
-}
-
-nav ul{
-display:flex;
-list-style:none
-}
-
-nav ul li{
-margin-left:20px
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-font-size:16px;
-transition:0.3s
-}
-
-nav ul li a:hover{
-color:#6dd5ed
-}
-
-/* HERO */
-
-.hero{
-background-image:url(./bg2.jpg);
-background-size: cover;
-color:white;
-text-align:center;
-padding:90px 20px
-}
-
-.profile-img{
-width:200px;
-height:230px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid #c7e0f9;
-margin-bottom:18px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2)
-}
-
-.hero h1{
-color: rgb(9, 0, 7);
-font-size:38px;
-margin-bottom:8px
-}
-
-.hero p{
-color:#333;
-font-size:18px;
-margin-bottom:20px
-}
-
-/* BUTTONS */
-
-.btn{
-display:inline-block;
-padding:12px 22px;
-margin:6px;
-border-radius:6px;
-text-decoration:none;
-font-size:14px;
-font-weight:bold;
-transition:0.3s
-}
-
-.btn-primary{
-background:white;
-color:#260592
-}
-
-.btn-outline{
-border:2px solid rgb(7, 7, 7);
-color:rgb(10, 10, 10)
-}
-
-.btn:hover{
-transform:translateY(-3px);
-box-shadow:0 5px 15px rgba(0,0,0,0.2)
-}
-
-/* SECTIONS */
-
-section{
-padding:60px 0;
-margin-bottom: 30px;
-}
-
-.card{
-background:rgb(190, 226, 248);
-padding:40px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-margin-bottom:25px
-}
-
-/* SKILLS */
-
-.skills-list{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-margin-top:15px
-}
-
-.skill{
-background:white;
-padding:8px 14px;
-border-radius:6px;
-font-size:14px;
-color:#333
-}
-
-/*EDUCATION*/
-.education-container{
-    margin-top: 15px;
-}
-
-
-/* PROJECTS */
-
-.projects-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-top:20px
-}
-
-.project{
-background:#fafafa;
-padding:20px;
-border-radius:10px;
-border:1px solid #eee;
-transition:0.3s
-}
-
-.project:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 20px rgba(0,0,0,0.1)
-}
-
-/* Hobby */
-
-.hobby-list{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-margin-top:15px
-}
-
-.hobby{
-background: white;
-padding:8px 14px;
-border-radius:6px;
-color:#333
-}
-
-/* CONTACT */
-
-.contact-info p{
-margin:8px 0;
-font-size:15px;
-}
-
-.contact-info a{
-color:#243291;
-text-decoration:none;
-}
-
-.contact-info a:hover{
-text-decoration:underline;
-}
-
-.footer {
-    font-size:x-small;
-}
-
-/* Tablet */
-
-@media (max-width:900px){
-
-.projects-grid{
-grid-template-columns:repeat(2,1fr)
-}
-
-.hero h1{
-font-size:30px
-}
-
-}
-
-/* Mobile */
-
-@media (max-width:600px){
-
-.navbar{
-flex-direction:column
-}
-
-nav ul{
-flex-direction:column;
-margin-top:10px
-}
-
-nav ul li{
-margin:8px 0
-}
-
-.hero{
-padding:70px 20px
-}
-
-.hero h1{
-font-size:26px
-}
-
-.projects-grid{
-grid-template-columns:1fr
-}
-
-.card{
-padding:25px
-}
-
-
-}
-
-</style>
 </head>
 
 <body>
 
 <header>
 
+<!--NAVBAR-->
 <div class="container navbar">
 
 <div class="logo">Sapna Nirmal</div>
@@ -288,14 +32,17 @@ padding:25px
 
 </header>
 
+<!--HERO-->
 <section class="hero">
 <img src="./Profile Update.jpeg" alt="Sapna Nirmal" class="profile-img">
 <h1>SAPNA NIRMAL</h1>
-<p>Full Stack Developer | React | Node.js</p>
-<a href="#about" class="btn btn-primary">About Me</a>
+<p>Full Stack Developer | React | Node.js | Express.js</p>
+<a href="#about" class="btn btn-outline">About Me</a>
 <a href="./Sapna_Resume_Fullstack (1).pdf" download class="btn btn-outline">Download CV</a>
 </section>
 
+
+<!--ABOUT ME-->
 <div class="container">
 <section id="about" class="card">
 <h2>About Me</h2>
@@ -306,26 +53,47 @@ Currently, I am looking for an opportunity where I can contribute to real-world 
 </p>
 </section>
 
+
+<!--TECHNICAL SKILLS-->
+
 <section id="skills" class="card">
-<h2>Skills</h2>
+<h2>Technical Skills</h2>
 <div class="skills-list">
 <span class="skill">HTML</span>
 <span class="skill">CSS</span>
 <span class="skill">JavaScript</span>
 <span class="skill">React</span>
 <span class="skill">Node.js</span>
-<span class="skill">Express</span>
+<span class="skill">Express.js</span>
+<span class="skill">JQuery</span>
+<span class="skill">DOM</span>
 <span class="skill">PostgreSQL</span>
 <span class="skill">Git</span>
 <span class="skill">GitHub</span>
-<span class="skill">Responsive Web Design</span>
 <span class="skill">Bootstrap</span>
-<span class="skill">RESTful APIs,</span>
-<span class="skill">PostgreSQL</span>
+<span class="skill">RESTful APIs</span>
+<span class="skill">Aunthentication & Security</span>
+<span class="skill">Responsive Web Design</span>
 <span class="skill">VS Code</span>
 </div>
 </section>
 
+<!--SOFT SKILLS-->
+<section id="soft-skills" class="card">
+<h2>Soft Skills</h2>
+<div class="skills-list">
+<span class="skill">Quick Learner</span>
+<span class="skill">Adaptability</span>
+<span class="skill">Time Management</span>
+<span class="skill">Good Communication</span>
+<span class="skill">Analytical thinking</span>
+<span class="skill">Collaborative mindset</span>
+<span class="skill">Oberservant</span>
+<span class="skill">Creative</span>
+</div>
+</section>
+
+<!--EDUCATION-->
 <section id="Education" class="card">
 <h2 class="section-title">Education</h2>
 <div class="education-container">
@@ -341,25 +109,40 @@ Currently, I am looking for an opportunity where I can contribute to real-world 
 </div>
 </section>
 
-
+<!--PROJECTS-->
 <section id="projects" class="card">
 <h2>Projects</h2>
+
+<div class="project">
+<h3>Excavator Landing Page</h3>
+<p>Developed a fully responsive Excavator Landing Page using HTML5, CSS3, and JavaScript, showcasing projects details. Implemented interactive UI features including a dynamic navigation bar, dropdown menu, and search toggle functionality. Utilized Flexbox and CSS positioning to create structured and visually appealing layouts, ensuring cross-browser compatibility and responsiveness across devices. Applied UI/UX design principles such as consistent spacing, typography, and color schemes to enhance user experience. Deployed the project using GitHub Pages for live accessibility.</p>
+<button class="btn btn-primary"><a href="https://sapnanirmal-07.github.io/html_assignment/">View Project</a></button>
+</div>
+
 <div class="projects-grid">
 <div class="project">
-<a href="https://sapnanirmal-07.github.io/html.project6_Move_it/"><h3>Move It Website</h3></a>
+<h3>Move It Website</h3>
 <p>Move It is a responsive landing page designed for a moving and relocation service. The website presents company services, features, and contact information using a clean layout and structured sections. It is built using HTML5, CSS3, and Bootstrap, focusing on responsive design and modern UI components.</p>
+<button class="btn btn-primary"><a href="https://sapnanirmal-07.github.io/html.project6_Move_it/">View Project</a></button>
+
 </div>
+
 <div class="project">
-<a href="https://sapnanirmal-07.github.io/html-Project9-StaycationProject/"><h3>Staycation Kerala Website</h3></a>
+<h3>Staycation Kerala Website</h3>
 <p>Staycation Kerala is a responsive travel website designed to showcase a relaxing vacation experience in Kerala. The project is built using HTML5, CSS3, and Bootstrap with a focus on responsive design and user-friendly navigation across different devices.</p>
+<button class="btn btn-primary"><a href="https://sapnanirmal-07.github.io/html-Project9-StaycationProject/">View Project</a></button>
 </div>
+
 <div class="project">
-<a href="https://sapnanirmal-07.github.io/html_Project10_For_you/"><h3>For You</h3></a>
+<h3>For You</h3>
 <p>An interactive “Sorry” webpage made with HTML, CSS, and JavaScript. Features floating hearts, background music, a playful moving button, and a hugging GIF that appears when forgiveness is given.</p>
+<button class="btn btn-primary"><a href="https://sapnanirmal-07.github.io/html_Project10_For_you/">View Project</a></button>
+
 </div>
 </div>
 </section>
 
+<!--HOBBIES-->
 <section id="hobbies" class="card">
 <h2>Hobby</h2>
 <div class="hobby-list">
@@ -368,10 +151,12 @@ Currently, I am looking for an opportunity where I can contribute to real-world 
     <span class="hobby">Travelling</span>
     <span class="hobby">Photography</span>
     <span class="hobby">Mandala</span>
+    <span class="hobby">Gardening</span>
 </div>
 
 </section>
 
+<!--CONTACT-->
 <section id="contact" class="card contact">
 <h2>Contact Me</h2>
 <p>If you have a project idea, job opportunity, or collaboration in mind, feel free to contact me.</p>
@@ -398,8 +183,7 @@ https://github.com/SapnaNirmal-07
 </footer>
 
 
+<script src="./index.js"></script>
+
 </body>
-
 </html>
-
-
